@@ -18,6 +18,7 @@ import {
   EffectComposer,
 } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
+import FloatingGrid from "./FloatingGrid";
 
 function CarShow() {
   return (
@@ -43,6 +44,8 @@ function CarShow() {
       </CubeCamera>
 
       <Rings />
+      <Boxes />
+      <FloatingGrid />
 
       <spotLight
         color={[1, 0.25, 0.7]}
@@ -63,8 +66,6 @@ function CarShow() {
         castShadow
         shadow-bias={-0.0001}
       />
-
-      <Boxes />
 
       <Ground />
 
